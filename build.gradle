@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.7.1'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.8.0'
+
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    testImplementation 'io.appium:java-client:8.3.0'
+
+    testImplementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    // FileUtils.copyFile
+    testImplementation 'commons-io:commons-io:2.11.0'
+
+}
+
+test {
+    useTestNG()
+}
