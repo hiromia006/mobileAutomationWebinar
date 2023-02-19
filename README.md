@@ -89,5 +89,3 @@ First we have to make your system ready then we can start our journey with appiu
 
 ### Additional functionalities, that may be covered:
 1. Please use Example table data to create excel/csv file as external test data provider and your automation script have the abitlity to read and write data from excel/csv
-
-### Record a video of tests execution:
